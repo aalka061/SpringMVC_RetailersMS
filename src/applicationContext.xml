@@ -4,9 +4,25 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="walmartBean"
-          class="com.alkaf.spring.Walmart">
+   
+    <bean id="myDonation" 
+    	class="com.alkaf.spring.Cheo">
     </bean>
+    
+   
+     <bean id="loblawsBean"
+          class="com.alkaf.spring.Loblaws">
+          <!-- set up constructor injection -->
+          <constructor-arg ref="myDonation"></constructor-arg>
+    </bean>
+    
+     <bean id="walmartBean"
+          class="com.alkaf.spring.Walmart">
+          
+          <!-- set up constructor injection -->
+    </bean>
+    
+    
 
 </beans>
                 

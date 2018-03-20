@@ -19,6 +19,20 @@ public class Walmart implements Retailer {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public int giveDontationByCustomer(int amount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	@Override
+	public void startBaking() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
